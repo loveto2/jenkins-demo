@@ -3,9 +3,11 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'npm install'
+        sh 'ls'
+        sh 'npm -v'
+        sh 'npm i'
         echo 'install success'
-        sh 'npm build'
+        sh 'npm run build'
         echo 'build success'
         sh 'npm start'
       }
